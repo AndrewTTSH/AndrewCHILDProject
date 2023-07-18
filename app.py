@@ -114,11 +114,11 @@ if __name__ == "__main__":
             f"Total cost of this conversation: ${st.session_state['total_cost']:.5f}")    
 
 
-        # print(st.session_state['messages'])
-        total_tokens = completion.usage.total_tokens
-        prompt_tokens = completion.usage.prompt_tokens
-        completion_tokens = completion.usage.completion_tokens
-        return response, total_tokens, prompt_tokens, completion_tokens
+    # print(st.session_state['messages'])
+    total_tokens = completion.usage.total_tokens
+    prompt_tokens = completion.usage.prompt_tokens
+    completion_tokens = completion.usage.completion_tokens
+    return response, total_tokens, prompt_tokens, completion_tokens
 
     # container for chat history
     response_container = st.container()
