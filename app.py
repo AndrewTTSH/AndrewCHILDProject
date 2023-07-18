@@ -75,6 +75,15 @@ def main():
 if __name__ == "__main__":
     main()
 
+    if 'model_name' not in st.session_state:
+        st.session_state['model_name'] = []
+    if 'cost' not in st.session_state:
+        st.session_state['cost'] = []
+    if 'total_tokens' not in st.session_state:
+        st.session_state['total_tokens'] = []
+    if 'total_cost' not in st.session_state:
+        st.session_state['total_cost'] = 0.0
+
     # Sidebar - let user choose model, show total cost of current conversation, and let user clear the current conversation
     st.sidebar.title("Sidebar")
     model_name = st.sidebar.radio("Choose a model:", ("GPT-3.5", "GPT-4"))
