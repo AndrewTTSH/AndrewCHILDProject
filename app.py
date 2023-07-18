@@ -63,9 +63,9 @@ def retrieval_answer(query):
     return result
 
 def main():
-    st.title("CHILD Projects, adapted from an Intern (Andrew)")
+    st.title("CHILD Projects")
 
-    text_input = st.text_input("Ask your query about any CHILD project") 
+    text_input = st.text_input("Ask your query about any CHILD project. Code adapted from open source, built by Andrew Soh") 
     if st.button("Ask Query"):
         if len(text_input)>0:
             st.info("Your Query: " + text_input)
