@@ -114,11 +114,11 @@ if __name__ == "__main__":
             f"Total cost of this conversation: ${st.session_state['total_cost']:.5f}")    
 
 
-    # print(st.session_state['messages'])
-    total_tokens = completion.usage.total_tokens
-    prompt_tokens = completion.usage.prompt_tokens
-    completion_tokens = completion.usage.completion_tokens
-    return response, total_tokens, prompt_tokens, completion_tokens
+        # print(st.session_state['messages'])
+        total_tokens = completion.usage.total_tokens
+        prompt_tokens = completion.usage.prompt_tokens
+        completion_tokens = completion.usage.completion_tokens
+        return response, total_tokens, prompt_tokens, completion_tokens
 
     # container for chat history
     response_container = st.container()
@@ -157,17 +157,16 @@ if __name__ == "__main__":
                     f"Model used: {st.session_state['model_name'][i]}; Number of tokens: {st.session_state['total_tokens'][i]}; Cost: ${st.session_state['cost'][i]:.5f}")
                 counter_placeholder.write(
                     f"Total cost of this conversation: ${st.session_state['total_cost']:.5f}")
-
-   except Exception as e:
-         error_message = ''
-         # st.text('Hello World')
-         st.error('An error has occurred. Please try again.', icon="🚨")
-         # Just print(e) is cleaner and more likely what you want,
-         # but if you insist on printing message specifically whenever possible...
-         if hasattr(e, 'message'):
-            error_message = e.message
-         else:
-            error_message = e
-            st.error('ERROR MESSAGE: {}'.format(error_message))
+except Exception as e:
+    error_message = ''
+    # st.text('Hello World')
+    st.error('An error has occurred. Please try again.', icon="🚨")
+    # Just print(e) is cleaner and more likely what you want,
+    # but if you insist on printing message specifically whenever possible...
+    if hasattr(e, 'message'):
+        error_message = e.message
+    else:
+        error_message = e
+    st.error('ERROR MESSAGE: {}'.format(error_message))
 
 
