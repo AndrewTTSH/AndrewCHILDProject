@@ -158,15 +158,15 @@ if __name__ == "__main__":
                 counter_placeholder.write(
                     f"Total cost of this conversation: ${st.session_state['total_cost']:.5f}")
 
-except Exception as e:
-    error_message = ''
-    # st.text('Hello World')
-    st.error('An error has occurred. Please try again.', icon="🚨")
-    # Just print(e) is cleaner and more likely what you want,
-    # but if you insist on printing message specifically whenever possible...
-    if hasattr(e, 'message'):
+   except Exception as e:
+     error_message = ''
+     # st.text('Hello World')
+     st.error('An error has occurred. Please try again.', icon="🚨")
+     # Just print(e) is cleaner and more likely what you want,
+     # but if you insist on printing message specifically whenever possible...
+     if hasattr(e, 'message'):
         error_message = e.message
-    else:
+     else:
         error_message = e
     st.error('ERROR MESSAGE: {}'.format(error_message))
 
