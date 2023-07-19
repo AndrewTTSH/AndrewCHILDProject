@@ -76,7 +76,7 @@ def main():
             st.success(answer)
 
     if 'past' not in st.session_state:
-    st.session_state['past'] = []
+        st.session_state['past'] = []
     
     if text_input:
         output = query({
