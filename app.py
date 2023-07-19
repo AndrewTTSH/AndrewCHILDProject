@@ -59,7 +59,7 @@ def retrieval_answer(query):
 
 
 def main():
-    st.title("CHILD Projects")
+    st.set_page_config(page_title="CHILD Projects", page_icon=":robot_face:")
     st.image('./banner.jpg')
 
   
