@@ -59,7 +59,7 @@ def retrieval_answer(query):
 def main():
     st.title("CHILD Projects")
     st.image('./banner.jpg')
-    st.icon(":robot_face:")
+    st.icon(':robot_face:')
   
     text_input = st.text_input("Ask your query about any CHILD project. Code adapted from open source, built by Andrew Soh") 
     if st.button("Ask Query"):
