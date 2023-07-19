@@ -75,29 +75,7 @@ def main():
             answer = retrieval_answer(text_input)
             st.success(answer)
 
-    if 'past' not in st.session_state:
-        st.session_state['past'] = []
-    
-    if text_input:
-        output = query({
-        "inputs": {
-            "past_user_inputs": st.session_state.past,
-            "generated_responses": st.session_state.generated,
-            "text": user_input,
-        },"parameters": {"repetition_penalty": 1.33},
-    })
 
-    st.session_state.past.append(user_input)
-    st.session_state.generated.append(output["generated_text"])
-
-    if st.session_state['generated']:
-
-        for i in range(len(st.session_state['generated'])-1, -1, -1):
-            message(st.session_state["generated"][i], key=str(i))
-            message(st.session_state['past'][i], is_user=True, key=str(i) + '_user')
-
-
- 
 
     # Sidebar - let user choose model, show total cost of current conversation, and let user clear the current conversation
     st.sidebar.title("CHILD Projects")
