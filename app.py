@@ -64,6 +64,7 @@ def retrieval_answer(query):
 
 def main():
     st.title("CHILD Projects")
+    st.image('./banner.jpg')
 
     text_input = st.text_input("Ask your query about any CHILD project. Code adapted from open source, built by Andrew Soh") 
     if st.button("Ask Query"):
@@ -85,7 +86,7 @@ if __name__ == "__main__":
         st.session_state['total_cost'] = 0.0
 
 
-    st.image('./banner.jpg')
+ 
 
     # Sidebar - let user choose model, show total cost of current conversation, and let user clear the current conversation
     st.sidebar.title("CHILD Projects")
