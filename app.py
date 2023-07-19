@@ -56,8 +56,6 @@ def retrieval_answer(query):
     result = qa.run(query)
     return result
 
-
-@extra
 def add_logo(logo_url: "./banner.jpg", height: int = 120):
     """Add a logo (from logo_url) on the top of the navigation page of a multipage app.
     Taken from https://discuss.streamlit.io/t/put-logo-and-title-above-on-top-of-page-navigation-in-sidebar-of-multipage-app/28213/6
