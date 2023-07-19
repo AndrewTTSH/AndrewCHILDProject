@@ -10,7 +10,7 @@ import streamlit as st
 from dotenv import load_dotenv
 from langchain.chains import RetrievalQAWithSourcesChain
 
-st.set_page_config(page_title="CHILD ChatGPT", page_icon=":robot_face:")
+
 
 load_dotenv()
 PINECONE_API_KEY = os.getenv('PINECONE_API_KEY')
