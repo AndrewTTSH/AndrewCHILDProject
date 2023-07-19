@@ -58,10 +58,10 @@ def main():
     st.title("CHILD Projects")
     st.image('./banner.jpg')
 
-  qa_with_sources = RetrievalQAWithSourcesChain.from_chain_type(
-      llm=llm,
-      chain_type="stuff",
-      retriever=vectorstore.as_retriever()
+      qa_with_sources = RetrievalQAWithSourcesChain.from_chain_type(
+          llm=llm,
+          chain_type="stuff",
+          retriever=vectorstore.as_retriever()
 
     
     text_input = st.text_input("Ask your query about any CHILD project. Code adapted from open source, built by Andrew Soh") 
