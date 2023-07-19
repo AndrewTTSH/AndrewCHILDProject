@@ -105,6 +105,7 @@ def main():
             st.info("Your Query: " + text_input)
             answer = retrieval_answer(text_input)
             st.success(answer)
+            print('Sources: {}'.format(result['sources']))
 
 
 
