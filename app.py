@@ -80,7 +80,7 @@ if __name__ == "__main__":
     # Sidebar - let user choose model, show total cost of current conversation, and let user clear the current conversation
     st.sidebar.image("./child logo_with brushstroke.png", use_column_width=True)
     
-    model_name = st.sidebar.radio("Choose a model:", ("GPT-3.5", "GPT-4"))
+    model_name = st.sidebar.radio("Coded and inspired by many open source projects, CHILD Projects is a LLM model coded by an Intern at CHI (Andrew). Projects stored are all found on the child.chi.sg website. Choose a model:", ("GPT-3.5", "GPT-4"))
     counter_placeholder = st.sidebar.empty()
     counter_placeholder.write(
         f"Total cost of this conversation: ${st.session_state['total_cost']:.5f}")
