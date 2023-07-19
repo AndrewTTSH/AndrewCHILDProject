@@ -63,6 +63,8 @@ def retrieval_answer(query):
     return result
 
 def main():
+    [theme]
+    base="light"
     st.title("CHILD Projects")
     st.image('./banner.jpg')
 
