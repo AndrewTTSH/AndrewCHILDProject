@@ -14,17 +14,6 @@ from langchain.chains import RetrievalQAWithSourcesChain
 
 load_dotenv()
 PINECONE_API_KEY = os.getenv('PINECONE_API_KEY')
-
-    
-          
-            
-    
-
-          
-          Expand Down
-    
-    
-  
 PINECONE_ENV = os.getenv('PINECONE_ENV')
 OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
 os.environ['OPENAI_API_KEY'] = OPENAI_API_KEY
