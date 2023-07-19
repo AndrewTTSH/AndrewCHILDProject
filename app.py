@@ -8,6 +8,7 @@ from langchain.chains import RetrievalQA
 from langchain.chat_models import ChatOpenAI
 import streamlit as st
 from dotenv import load_dotenv
+from langchain.chains import RetrievalQAWithSourcesChain
 
 load_dotenv()
 PINECONE_API_KEY = os.getenv('PINECONE_API_KEY')
@@ -56,6 +57,12 @@ def retrieval_answer(query):
 def main():
     st.title("CHILD Projects")
     st.image('./banner.jpg')
+
+  qa_with_sources = RetrievalQAWithSourcesChain.from_chain_type(
+      llm=llm,
+      chain_type="stuff",
+      retriever=vectorstore.as_retriever()
+
     
     text_input = st.text_input("Ask your query about any CHILD project. Code adapted from open source, built by Andrew Soh") 
     if st.button("Ask Query"):
@@ -63,6 +70,8 @@ def main():
             st.info("Your Query: " + text_input)
             answer = retrieval_answer(text_input)
             st.success(answer)
+            print('Sources: {}'.format(result['sources']))
+            
 if __name__ == "__main__":
     main()
     if 'model_name' not in st.session_state:
