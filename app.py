@@ -58,19 +58,13 @@ def main():
     st.title("CHILD Projects")
     st.image('./banner.jpg')
 
-      qa_with_sources = RetrievalQAWithSourcesChain.from_chain_type(
-          llm=llm,
-          chain_type="stuff",
-          retriever=vectorstore.as_retriever()
-
-    
+  
     text_input = st.text_input("Ask your query about any CHILD project. Code adapted from open source, built by Andrew Soh") 
     if st.button("Ask Query"):
         if len(text_input)>0:
             st.info("Your Query: " + text_input)
             answer = retrieval_answer(text_input)
             st.success(answer)
-            print('Sources: {}'.format(result['sources']))
             
 if __name__ == "__main__":
     main()
