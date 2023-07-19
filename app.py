@@ -8,6 +8,37 @@ from langchain.chains import RetrievalQA
 from langchain.chat_models import ChatOpenAI
 import streamlit as st
 from dotenv import load_dotenv
+from langchain.chat_models import ChatOpenAI
+from langchain.chains import RetrievalQAWithSourcesChain
+
+try:
+  # completion llm
+  llm = ChatOpenAI(
+      openai_api_key=OPENAI_API_KEY,
+      model_name='gpt-3.5-turbo',
+      temperature=0.0
+  )
+
+  qa_with_sources = RetrievalQAWithSourcesChain.from_chain_type(
+      llm=llm,
+      chain_type="stuff",
+      retriever=vectorstore.as_retriever()
+  )
+
+  result = qa_with_sources(query)
+  #print(result)
+  print('Question: {}'.format(result['question']))
+  print('Answer: {}'.format(result['answer']))
+  print('Sources: {}'.format(result['sources']))
+except Exception as e:
+  error_message = ''
+  # Just print(e) is cleaner and more likely what you want,
+  # but if you insist on printing message specifically whenever possible...
+  if hasattr(e, 'message'):
+      error_message = e.message
+  else:
+      error_message = e
+  print('ERROR MESSAGE: {}'.format(error_message))
 
 load_dotenv()
 
