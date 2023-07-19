@@ -85,7 +85,7 @@ if __name__ == "__main__":
         st.session_state['total_cost'] = 0.0
 
 
-    st.image('./header.png')
+    st.image('./banner.jpg')
 
     # Sidebar - let user choose model, show total cost of current conversation, and let user clear the current conversation
     st.sidebar.title("CHILD Projects")
