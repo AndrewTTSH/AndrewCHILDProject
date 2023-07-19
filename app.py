@@ -125,9 +125,9 @@ if __name__ == "__main__":
             st.session_state['cost'].append(cost)
             st.session_state['total_cost'] += cost
 
-    if st.session_state['answer']:
+    if st.session_state['generated']:
         with response_container:
-            for i in range(len(st.session_state['answer'])):
+            for i in range(len(st.session_state['generated'])):
                 message(st.session_state["past"][i],
                         is_user=True, key=str(i) + '_user')
                 message(st.session_state["answer"][i], key=str(i))
