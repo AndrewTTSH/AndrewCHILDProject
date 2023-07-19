@@ -9,6 +9,7 @@ from langchain.chat_models import ChatOpenAI
 import streamlit as st
 from dotenv import load_dotenv
 from langchain.chains import RetrievalQAWithSourcesChain
+from streamlit_extras.app_logo import add_logo
 
 load_dotenv()
 PINECONE_API_KEY = os.getenv('PINECONE_API_KEY')
@@ -54,6 +55,13 @@ def retrieval_answer(query):
     query = query
     result = qa.run(query)
     return result
+
+if st.checkbox("Use url", value=True):
+    add_logo("http://placekitten.com/120/120")
+else:
+    add_logo("gallery/kitty.jpeg", height=300)
+st.write("👈 Check out the cat in the nav-bar!")
+
 def main():
     st.title("CHILD Projects")
     st.image('./banner.jpg')
@@ -79,7 +87,7 @@ if __name__ == "__main__":
 
     # Sidebar - let user choose model, show total cost of current conversation, and let user clear the current conversation
     st.sidebar.title("CHILD Projects")
-    st.image('./banner.jpg')
+    
     model_name = st.sidebar.radio("Choose a model:", ("GPT-3.5", "GPT-4"))
     counter_placeholder = st.sidebar.empty()
     counter_placeholder.write(
