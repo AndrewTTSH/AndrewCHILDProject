@@ -79,6 +79,7 @@ if __name__ == "__main__":
 
     # Sidebar - let user choose model, show total cost of current conversation, and let user clear the current conversation
     st.sidebar.title("CHILD Projects")
+    st.image('./banner.jpg')
     model_name = st.sidebar.radio("Choose a model:", ("GPT-3.5", "GPT-4"))
     counter_placeholder = st.sidebar.empty()
     counter_placeholder.write(
