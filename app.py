@@ -10,7 +10,7 @@ import streamlit as st
 from dotenv import load_dotenv
 from langchain.chains import RetrievalQAWithSourcesChain
 
-
+st.set_page_config(page_title="CHILD Project", page_icon=":robot_face:")
 
 load_dotenv()
 PINECONE_API_KEY = os.getenv('PINECONE_API_KEY')
@@ -59,8 +59,7 @@ def retrieval_answer(query):
 def main():
     st.title("CHILD Projects")
     st.image('./banner.jpg')
-    st.icon(':robot_face:')
-  
+
     text_input = st.text_input("Ask your query about any CHILD project. Code adapted from open source, built by Andrew Soh") 
     if st.button("Ask Query"):
         if len(text_input)>0:
