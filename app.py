@@ -84,6 +84,9 @@ if __name__ == "__main__":
     if 'total_cost' not in st.session_state:
         st.session_state['total_cost'] = 0.0
 
+
+    st.image('./header.png')
+
     # Sidebar - let user choose model, show total cost of current conversation, and let user clear the current conversation
     st.sidebar.title("CHILD Projects")
     model_name = st.sidebar.radio("Choose a model:", ("GPT-3.5", "GPT-4"))
