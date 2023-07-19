@@ -75,17 +75,26 @@ def main():
             answer = retrieval_answer(text_input)
             st.success(answer)
 
-if __name__ == "__main__":
-    main()
+    if 'past' not in st.session_state:
+    st.session_state['past'] = []
+    
+    if text_input:
+        output = query({
+        "inputs": {
+            "past_user_inputs": st.session_state.past,
+            "generated_responses": st.session_state.generated,
+            "text": user_input,
+        },"parameters": {"repetition_penalty": 1.33},
+    })
 
-    if 'model_name' not in st.session_state:
-        st.session_state['model_name'] = []
-    if 'cost' not in st.session_state:
-        st.session_state['cost'] = []
-    if 'total_tokens' not in st.session_state:
-        st.session_state['total_tokens'] = []
-    if 'total_cost' not in st.session_state:
-        st.session_state['total_cost'] = 0.0
+    st.session_state.past.append(user_input)
+    st.session_state.generated.append(output["generated_text"])
+
+    if st.session_state['generated']:
+
+    for i in range(len(st.session_state['generated'])-1, -1, -1):
+        message(st.session_state["generated"][i], key=str(i))
+        message(st.session_state['past'][i], is_user=True, key=str(i) + '_user')
 
 
  
