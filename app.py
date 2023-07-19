@@ -14,6 +14,17 @@ from langchain.chains import RetrievalQAWithSourcesChain
 
 load_dotenv()
 PINECONE_API_KEY = os.getenv('PINECONE_API_KEY')
+
+    
+          
+            
+    
+
+          
+          Expand Down
+    
+    
+  
 PINECONE_ENV = os.getenv('PINECONE_ENV')
 OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
 os.environ['OPENAI_API_KEY'] = OPENAI_API_KEY
@@ -56,12 +67,9 @@ def retrieval_answer(query):
     query = query
     result = qa.run(query)
     return result
-
-
 def main():
-    st.set_page_config(page_title="CHILD Projects", page_icon=":robot_face:")
+    st.title("CHILD Projects")
     st.image('./banner.jpg')
-
   
     text_input = st.text_input("Ask your query about any CHILD project. Code adapted from open source, built by Andrew Soh") 
     if st.button("Ask Query"):
@@ -80,8 +88,8 @@ if __name__ == "__main__":
         st.session_state['total_tokens'] = []
     if 'total_cost' not in st.session_state:
         st.session_state['total_cost'] = 0.0
-
     # Sidebar - let user choose model, show total cost of current conversation, and let user clear the current conversation
+    st.sidebar.title("CHILD Projects")
     st.sidebar.image("./child logo_with brushstroke.png", use_column_width=True)
     
     model_name = st.sidebar.radio("Choose a model:", ("GPT-3.5", "GPT-4"))
