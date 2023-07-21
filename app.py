@@ -60,8 +60,6 @@ def main():
     st.markdown("<h1 style='text-align: center;'>CHILD Projects</h1>",
                 unsafe_allow_html=True)
     st.image('./banner.jpg')
-    st.text('Developed from open source codes for a query searching based on CHILD knowledge base.')
-    st.text('Adapted by an Intern (Andrew)')
     st.text("Query on any topics related to healthcare and innovation")
 
     text_input = st.text_input("Ask your query about any CHILD project. Code adapted from open source, built by Andrew Soh") 
