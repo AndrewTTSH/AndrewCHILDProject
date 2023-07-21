@@ -57,10 +57,12 @@ def retrieval_answer(query):
     result = qa.run(query)
     return result
 def main():
-    st.title("CHILD Projects")
+    st.title("<h1 style='text-align: center;'>Chat with CHILD</h1>",
+                unsafe_allow_html=True)
     st.image('./banner.jpg')
-    st.text('Developed from open source projects based on LLM models, an Intern from CHI developed and created the CHI Project chatbot, to allow easier query searching from CHILD database.')
-
+    st.text('Developed from open source codes for a query searching based on CHILD knowledge base.')
+    st.text('Adapted by an Intern (Andrew)')
+    st.text("Query on any topics related to healthcare and innovation")
 
     text_input = st.text_input("Ask your query about any CHILD project. Code adapted from open source, built by Andrew Soh") 
     if st.button("Ask Query"):
