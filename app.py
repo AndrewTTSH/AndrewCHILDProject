@@ -84,7 +84,4 @@ if __name__ == "__main__":
     # Sidebar - let user choose model, show total cost of current conversation, and let user clear the current conversation
     st.sidebar.image("./child logo_with brushstroke.png", use_column_width=True)
     with st.sidebar:
-        st.caption(("Query on any topics related to healthcare and innovation")
-    
-
-
+        st.caption("Query on any topics related to healthcare and innovation")
