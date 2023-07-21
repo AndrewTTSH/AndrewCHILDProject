@@ -57,7 +57,7 @@ def retrieval_answer(query):
     result = qa.run(query)
     return result
 def main():
-    st.title("<h1 style='text-align: center;'>Chat with CHILD</h1>",
+    st.markdown("<h1 style='text-align: center;'>Chat with CHILD</h1>",
                 unsafe_allow_html=True)
     st.image('./banner.jpg')
     st.text('Developed from open source codes for a query searching based on CHILD knowledge base.')
