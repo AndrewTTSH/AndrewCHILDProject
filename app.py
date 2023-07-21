@@ -84,4 +84,4 @@ if __name__ == "__main__":
     # Sidebar - let user choose model, show total cost of current conversation, and let user clear the current conversation
     st.sidebar.image("./child logo_with brushstroke.png", use_column_width=True)
     with st.sidebar:
-        st.caption("Query on any topics related to healthcare and innovation")
+        st.caption("Developed from open source codes for a search based on CHILD collection of projects. Do be aware that there will be longer waiting time as the AI search through our knowledge base")
