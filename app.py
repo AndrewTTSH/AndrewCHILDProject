@@ -90,8 +90,6 @@ if __name__ == "__main__":
         st.caption("Developed from open source codes for a search based on CHILD collection of projects.")
         st.caption("Do be aware that there will be longer waiting time as the AI search through our knowledge base")
         st.write("Check out our [CHILD website here](https://child.chi.sg)")
-
-
         st.write("[National Health Group](https://child.chi.sg)")
         st.write("[SingHealth](https://child.chi.sg)")
         st.write("[National University Health](https://child.chi.sg)")
