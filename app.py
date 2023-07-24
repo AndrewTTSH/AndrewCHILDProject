@@ -91,9 +91,9 @@ if __name__ == "__main__":
         st.caption("Do be aware that there will be longer waiting time as the AI search through our knowledge base")
         st.write("Check out our [CHILD website here](https://child.chi.sg)")
 
-    st.sidebar.markdown('[![Title](https://www.chi.sg/images/Logos/Healthcare/nhgroup.svg)](‘https://corp.nhg.com.sg/Pages/default.aspx’)')
-    st.sidebar.markdown('[![Title](https://www.chi.sg/images/Logos/Healthcare/singhealth.svg)](‘https://www.singhealth.com.sg’)')
-    st.sidebar.markdown('[![Title](https://www.chi.sg/images/Logos/Healthcare/nuhsgroup.svg)](‘https://www.nuhs.edu.sg/Pages/Home.aspx’)')
+    st.sidebar.markdown('[![Title](https://www.chi.sg/images/Logos/Healthcare/nhgroup.svg, width=400)](‘https://corp.nhg.com.sg/Pages/default.aspx’)')
+    st.sidebar.markdown('[![Title](https://www.chi.sg/images/Logos/Healthcare/singhealth.svg, width=400)](‘https://www.singhealth.com.sg’)')
+    st.sidebar.markdown('[![Title](https://www.chi.sg/images/Logos/Healthcare/nuhsgroup.svg, width=400)](‘https://www.nuhs.edu.sg/Pages/Home.aspx’)')
 
 
 
