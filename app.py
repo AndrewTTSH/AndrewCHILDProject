@@ -86,13 +86,13 @@ if __name__ == "__main__":
         st.session_state['total_cost'] = 0.0
     # Sidebar - let user choose model, show total cost of current conversation, and let user clear the current conversation
 
-image1_url = "https://www.chi.sg/images/Logos/Healthcare/nhgroup.svg"
+image1_url = "./child logo_with brushstroke.png"
 link1_url = "https://corp.nhg.com.sg/Pages/default.aspx"
 
-image2_url = "https://www.nuhs.edu.sg/PublishingImages/SiteLogo/nuhslogo.png"
+image2_url = "./child logo_with brushstroke.png"
 link2_url = "https://www.nuhs.edu.sg/Pages/Home.aspx"
 
-image3_url = "https://www.singhealth.com.sg/Style%20Library/Common/images/header/site-logo.png"
+image3_url = "./child logo_with brushstroke.png"
 link3_url = "https://www.singhealth.com.sg"
 
     
