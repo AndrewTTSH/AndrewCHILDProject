@@ -65,6 +65,9 @@ def main():
     st.image('./banner.jpg')
     st.text("Query on any topics related to healthcare and innovation")
 
+    st.markdown("[![Foo](./banner.jpg)](https://child.chi.sg)")
+
+
     text_input = st.text_input("Ask your query about any CHILD project. Code adapted from open source, built by Andrew Soh") 
     if st.button("Ask Query"):
         if len(text_input)>0:
