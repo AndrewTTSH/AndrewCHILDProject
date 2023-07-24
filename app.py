@@ -97,7 +97,7 @@ link1_url = "https://corp.nhg.com.sg/Pages/default.aspx"
 image2_path = "https://github.com/AndrewTTSH/AndrewCHILDProject/blob/main/NUHS%20Logo%201.PNG?raw=true"
 link2_url = "https://www.nuhs.edu.sg/Pages/Home.aspx"
 
-image3_path = "./child logo_with brushstroke.png"
+image3_path = "/AIC-Main Logo RGB-HR.png"
 link3_url = "https://www.singhealth.com.sg"
 
 st.sidebar.image(image1_path, use_column_width=True)
