@@ -100,15 +100,18 @@ link2_url = "https://www.nuhs.edu.sg/Pages/Home.aspx"
 image3_path = "./child logo_with brushstroke.png"
 link3_url = "https://www.singhealth.com.sg"
 
-    
-st.sidebar.image("./child logo_with brushstroke.png", use_column_width=True)
+st.sidebar.image(image1_path, use_column_width=True)
+st.sidebar.image(image2_path, use_column_width=True)
+st.sidebar.image(image3_path, use_column_width=True)
+
 with st.sidebar:
-        st.caption("Developed from open source codes for a search based on CHILD collection of projects.")
-        st.caption("Do be aware that there will be longer waiting time as the AI search through our knowledge base")
-        st.write("Check out our [CHILD website here](https://child.chi.sg)")
-        st.markdown(f'<a href="{link1_url}" target="_blank"><img src="{image1_path}" width="100" height="100"></a>', unsafe_allow_html=True)
-        st.markdown(f'<a href="{link2_url}" target="_blank"><img src="{image2_path}" width="100" height="100"></a>', unsafe_allow_html=True)
-        st.markdown(f'<a href="{link3_url}" target="_blank"><img src="{image3_path}" width="100" height="100"></a>', unsafe_allow_html=True)
+    st.caption("Developed from open source codes for a search based on CHILD collection of projects.")
+    st.caption("Do be aware that there will be longer waiting time as the AI search through our knowledge base")
+    st.write("Check out our [CHILD website here](https://child.chi.sg)")
+    st.markdown(f'<a href="{link1_url}" target="_blank"><img src="{image1_path}" width="100" height="100"></a>', unsafe_allow_html=True)
+    st.markdown(f'<a href="{link2_url}" target="_blank"><img src="{image2_path}" width="100" height="100"></a>', unsafe_allow_html=True)
+    st.markdown(f'<a href="{link3_url}" target="_blank"><img src="{image3_path}" width="100" height="100"></a>', unsafe_allow_html=True)
+
 
 
 
