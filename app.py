@@ -64,7 +64,7 @@ def main():
     st.markdown("<h1 style='text-align: center;'>link </h1>", unsafe_allow_html=True)
     st.image('./banner.jpg')
     st.text("Query on any topics related to healthcare and innovation")
-
+    st.markdown("[![Foo](./banner.jpg)](https://child.chi.sg)")
     st.markdown("[![Foo](./banner.jpg)](https://child.chi.sg)")
 
 
