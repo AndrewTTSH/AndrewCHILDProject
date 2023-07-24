@@ -97,7 +97,7 @@ link3_url = "https://www.singhealth.com.sg"
 
     
 st.sidebar.image("./child logo_with brushstroke.png", use_column_width=True)
-    with st.sidebar:
+with st.sidebar:
         st.caption("Developed from open source codes for a search based on CHILD collection of projects.")
         st.caption("Do be aware that there will be longer waiting time as the AI search through our knowledge base")
         st.write("Check out our [CHILD website here](https://child.chi.sg)")
