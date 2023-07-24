@@ -91,11 +91,19 @@ if __name__ == "__main__":
         st.caption("Do be aware that there will be longer waiting time as the AI search through our knowledge base")
         st.write("Check out our [CHILD website here](https://child.chi.sg)")
 
-image_url = "https://www.chi.sg/images/Logos/Healthcare/nhgroup.svg"
-link_url = "https://corp.nhg.com.sg/Pages/default.aspx"
+image1_url = "https://www.chi.sg/images/Logos/Healthcare/nhgroup.svg"
+link1_url = "https://corp.nhg.com.sg/Pages/default.aspx"
+
+image2_url = "https://www.nuhs.edu.sg/PublishingImages/SiteLogo/nuhslogo.png"
+link2_url = "https://www.nuhs.edu.sg/Pages/Home.aspx"
+
+image3_url = "https://www.singhealth.com.sg/Style%20Library/Common/images/header/site-logo.png"
+link3_url = "https://www.singhealth.com.sg"
 
 # Use HTML to display the linked image with specified dimensions
-st.markdown(f'<a href="{link_url}" target="_blank"><img src="{image_url}" width="200" height="200"></a>', unsafe_allow_html=True)
+st.markdown(f'<a href="{link1_url}" target="_blank"><img src="{image1_url}" width="200" height="200"></a>', unsafe_allow_html=True)
+st.markdown(f'<a href="{link2_url}" target="_blank"><img src="{image2_url}" width="200" height="200"></a>', unsafe_allow_html=True)
+st.markdown(f'<a href="{link3_url}" target="_blank"><img src="{image3_url}" width="200" height="200"></a>', unsafe_allow_html=True)
 
 
 
