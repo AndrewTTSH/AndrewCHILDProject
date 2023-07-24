@@ -101,8 +101,7 @@ image3_path = "./child logo_with brushstroke.png"
 link3_url = "https://www.singhealth.com.sg"
 
 st.sidebar.image(image1_path, use_column_width=True)
-st.sidebar.image(image2_path, use_column_width=True)
-st.sidebar.image(image3_path, use_column_width=True)
+
 
 with st.sidebar:
     st.caption("Developed from open source codes for a search based on CHILD collection of projects.")
