@@ -63,7 +63,7 @@ def main():
                 unsafe_allow_html=True)
     st.image('./banner.jpg')
     st.text("Query on any topics related to healthcare and innovation")
-    st.markdown("[![banner](https://raw.githubusercontent.com/isomerpages/ttsh-chi-child/staging/images/banner.jpg)](https://child.chi.sg)")
+    st.markdown("[![banner](https://github.com/AndrewTTSH/AndrewCHILDProject/blob/main/banner.jpg?raw=true)](https://child.chi.sg)")
 
 
 
@@ -90,5 +90,13 @@ if __name__ == "__main__":
         st.caption("Developed from open source codes for a search based on CHILD collection of projects.")
         st.caption("Do be aware that there will be longer waiting time as the AI search through our knowledge base")
         st.write("Check out our [CHILD website here](https://child.chi.sg)")
+
+
+        st.write("[National Health Group](https://child.chi.sg)")
+        st.write("[SingHealth](https://child.chi.sg)")
+        st.write("[National University Health](https://child.chi.sg)")
+
+
+
 
 
