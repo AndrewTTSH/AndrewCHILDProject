@@ -9,7 +9,7 @@ from langchain.chat_models import ChatOpenAI
 import streamlit as st
 from dotenv import load_dotenv
 from langchain.chains import RetrievalQAWithSourcesChain
-from streamlit_extras.mention import mention
+
 
 
 st.set_page_config(page_title="CHILD Project", page_icon=":robot_face:")
