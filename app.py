@@ -85,11 +85,6 @@ if __name__ == "__main__":
     if 'total_cost' not in st.session_state:
         st.session_state['total_cost'] = 0.0
     # Sidebar - let user choose model, show total cost of current conversation, and let user clear the current conversation
-    st.sidebar.image("./child logo_with brushstroke.png", use_column_width=True)
-    with st.sidebar:
-        st.caption("Developed from open source codes for a search based on CHILD collection of projects.")
-        st.caption("Do be aware that there will be longer waiting time as the AI search through our knowledge base")
-        st.write("Check out our [CHILD website here](https://child.chi.sg)")
 
 image1_url = "https://www.chi.sg/images/Logos/Healthcare/nhgroup.svg"
 link1_url = "https://corp.nhg.com.sg/Pages/default.aspx"
@@ -100,10 +95,15 @@ link2_url = "https://www.nuhs.edu.sg/Pages/Home.aspx"
 image3_url = "https://www.singhealth.com.sg/Style%20Library/Common/images/header/site-logo.png"
 link3_url = "https://www.singhealth.com.sg"
 
-# Use HTML to display the linked image with specified dimensions
-st.markdown(f'<a href="{link1_url}" target="_blank"><img src="{image1_url}" width="200" height="200"></a>', unsafe_allow_html=True)
-st.markdown(f'<a href="{link2_url}" target="_blank"><img src="{image2_url}" width="200" height="200"></a>', unsafe_allow_html=True)
-st.markdown(f'<a href="{link3_url}" target="_blank"><img src="{image3_url}" width="200" height="200"></a>', unsafe_allow_html=True)
+    
+    st.sidebar.image("./child logo_with brushstroke.png", use_column_width=True)
+    with st.sidebar:
+        st.caption("Developed from open source codes for a search based on CHILD collection of projects.")
+        st.caption("Do be aware that there will be longer waiting time as the AI search through our knowledge base")
+        st.write("Check out our [CHILD website here](https://child.chi.sg)")
+        st.markdown(f'<a href="{link1_url}" target="_blank"><img src="{image1_url}" width="200" height="200"></a>', unsafe_allow_html=True)
+        st.markdown(f'<a href="{link2_url}" target="_blank"><img src="{image2_url}" width="200" height="200"></a>', unsafe_allow_html=True)
+        st.markdown(f'<a href="{link3_url}" target="_blank"><img src="{image3_url}" width="200" height="200"></a>', unsafe_allow_html=True)
 
 
 
