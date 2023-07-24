@@ -91,13 +91,13 @@ if __name__ == "__main__":
         st.session_state['total_cost'] = 0.0
     # Sidebar - let user choose model, show total cost of current conversation, and let user clear the current conversation
 
-image1_url = "/child logo_with brushstroke.png"
+image1_path = "/child logo_with brushstroke.png"
 link1_url = "https://corp.nhg.com.sg/Pages/default.aspx"
 
-image2_url = "/child logo_with brushstroke.png"
+image2_path = "/child logo_with brushstroke.png"
 link2_url = "https://www.nuhs.edu.sg/Pages/Home.aspx"
 
-image3_url = "/child logo_with brushstroke.png"
+image3_path = "/child logo_with brushstroke.png"
 link3_url = "https://www.singhealth.com.sg"
 
     
@@ -106,9 +106,9 @@ with st.sidebar:
         st.caption("Developed from open source codes for a search based on CHILD collection of projects.")
         st.caption("Do be aware that there will be longer waiting time as the AI search through our knowledge base")
         st.write("Check out our [CHILD website here](https://child.chi.sg)")
-        st.markdown(f'<a href="{link1_url}" target="_blank"><img src="{image1_url}" width="200" height="200"></a>', unsafe_allow_html=True)
-        st.markdown(f'<a href="{link2_url}" target="_blank"><img src="{image2_url}" width="200" height="200"></a>', unsafe_allow_html=True)
-        st.markdown(f'<a href="{link3_url}" target="_blank"><img src="{image3_url}" width="200" height="200"></a>', unsafe_allow_html=True)
+        st.markdown(f'<a href="{link1_url}" target="_blank"><img src="{image1_path}" width="100" height="100"></a>', unsafe_allow_html=True)
+        st.markdown(f'<a href="{link2_url}" target="_blank"><img src="{image2_path}" width="100" height="100"></a>', unsafe_allow_html=True)
+        st.markdown(f'<a href="{link3_url}" target="_blank"><img src="{image3_path}" width="100" height="100"></a>', unsafe_allow_html=True)
 
 
 
