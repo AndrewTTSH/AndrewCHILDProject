@@ -91,5 +91,9 @@ if __name__ == "__main__":
         st.caption("Developed from open source codes for a search based on CHILD collection of projects.")
         st.caption("Do be aware that there will be longer waiting time as the AI search through our knowledge base")
         st.write("Check out our [CHILD website here](https://child.chi.sg)")
-        st.markdown("[![Foo](./banner.jpg)](https://child.chi.sg)")
+        mention(
+        label="streamlit-extras",
+        icon="🪢",  # You can also just use an emoji
+        url="https://github.com/arnaudmiribel/streamlit-extras",
+    )
 
