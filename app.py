@@ -91,20 +91,12 @@ if __name__ == "__main__":
         st.caption("Do be aware that there will be longer waiting time as the AI search through our knowledge base")
         st.write("Check out our [CHILD website here](https://child.chi.sg)")
 
-# Image URLs
-image_url_1 = 'https://www.chi.sg/images/Logos/Healthcare/nhgroup.svg'
-image_url_2 = 'https://www.chi.sg/images/Logos/Healthcare/singhealth.svg'
-image_url_3 = 'https://www.chi.sg/images/Logos/Healthcare/nuhsgroup.svg'
+image_url = "https://www.chi.sg/images/Logos/Healthcare/nhgroup.svg"
+link_url = "https://corp.nhg.com.sg/Pages/default.aspx"
 
-# Hyperlink URLs
-link_url_1 = 'https://corp.nhg.com.sg/Pages/default.aspx'
-link_url_2 = 'https://www.singhealth.com.sg'
-link_url_3 = 'https://www.nuhs.edu.sg/Pages/Home.aspx'
+# Use HTML to display the linked image with specified dimensions
+st.markdown(f'<a href="{link_url}" target="_blank"><img src="{image_url}" width="200" height="200"></a>', unsafe_allow_html=True)
 
-# Display images with dimensions 200x200 and hyperlink them
-st.image(image_url_1, width=200, use_column_width=False)
-st.markdown(f'[![Title]({image_url_2}|width=200)]({link_url_2})')
-st.markdown(f'[![Title]({image_url_3}|width=200)]({link_url_3})')
 
 
 
