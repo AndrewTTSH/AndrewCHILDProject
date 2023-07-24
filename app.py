@@ -91,9 +91,20 @@ if __name__ == "__main__":
         st.caption("Do be aware that there will be longer waiting time as the AI search through our knowledge base")
         st.write("Check out our [CHILD website here](https://child.chi.sg)")
 
-st.sidebar.markdown('[![Title](https://www.chi.sg/images/Logos/Healthcare/nhgroup.svg | width=200)](https://corp.nhg.com.sg/Pages/default.aspx)')
-st.sidebar.markdown('[![Title](https://www.chi.sg/images/Logos/Healthcare/singhealth.svg | width=200)](https://www.singhealth.com.sg)')
-st.sidebar.markdown('[![Title](https://www.chi.sg/images/Logos/Healthcare/nuhsgroup.svg | width=200)](https://www.nuhs.edu.sg/Pages/Home.aspx)')
+# Image URLs
+image_url_1 = 'https://www.chi.sg/images/Logos/Healthcare/nhgroup.svg'
+image_url_2 = 'https://www.chi.sg/images/Logos/Healthcare/singhealth.svg'
+image_url_3 = 'https://www.chi.sg/images/Logos/Healthcare/nuhsgroup.svg'
+
+# Hyperlink URLs
+link_url_1 = 'https://corp.nhg.com.sg/Pages/default.aspx'
+link_url_2 = 'https://www.singhealth.com.sg'
+link_url_3 = 'https://www.nuhs.edu.sg/Pages/Home.aspx'
+
+# Display images with dimensions 200x200 and hyperlink them
+st.image(image_url_1, width=200, use_column_width=False)
+st.markdown(f'[![Title]({image_url_2}|width=200)]({link_url_2})')
+st.markdown(f'[![Title]({image_url_3}|width=200)]({link_url_3})')
 
 
 
