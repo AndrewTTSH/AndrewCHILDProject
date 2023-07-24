@@ -88,5 +88,4 @@ if __name__ == "__main__":
         st.caption("Developed from open source codes for a search based on CHILD collection of projects.")
         st.caption("Do be aware that there will be longer waiting time as the AI search through our knowledge base")
         st.write("Check out our [CHILD website here](https://child.chi.sg)")
-        link = '[GitHub](http://github.com)'
-        st.markdown(link, unsafe_allow_html=True)
+
