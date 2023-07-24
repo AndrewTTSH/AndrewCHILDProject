@@ -94,7 +94,7 @@ if __name__ == "__main__":
 image1_path = "./child logo_with brushstroke.png"
 link1_url = "https://corp.nhg.com.sg/Pages/default.aspx"
 
-image2_path = "./child logo_with brushstroke.png"
+image2_path = "https://github.com/AndrewTTSH/AndrewCHILDProject/blob/main/child%20logo_with%20brushstroke.png?raw=true"
 link2_url = "https://www.nuhs.edu.sg/Pages/Home.aspx"
 
 image3_path = "./child logo_with brushstroke.png"
