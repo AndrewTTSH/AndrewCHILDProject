@@ -63,7 +63,7 @@ def main():
                 unsafe_allow_html=True)
     st.image('./banner.jpg')
     st.text("Query on any topics related to healthcare and innovation")
-    st.markdown("[![banner](/banner.jpg)](https://child.chi.sg)")
+    st.markdown("[![banner]('./banner.jpg')](https://child.chi.sg)")
     st.markdown("[![Foo](./banner.jpg)](https://child.chi.sg)")
 
 
