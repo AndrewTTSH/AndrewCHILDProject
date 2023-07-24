@@ -91,7 +91,7 @@ if __name__ == "__main__":
         st.session_state['total_cost'] = 0.0
     # Sidebar - let user choose model, show total cost of current conversation, and let user clear the current conversation
 
-image1_path = "./child logo_with brushstroke.png"
+image1_path = "https://github.com/AndrewTTSH/AndrewCHILDProject/blob/main/NHG_CMYK_vertical.png?raw=true"
 link1_url = "https://corp.nhg.com.sg/Pages/default.aspx"
 
 image2_path = "https://github.com/AndrewTTSH/AndrewCHILDProject/blob/main/NUHS%20Logo%201.PNG?raw=true"
@@ -107,7 +107,7 @@ with st.sidebar:
     st.caption("Developed from open source codes for a search based on CHILD collection of projects.")
     st.caption("Do be aware that there will be longer waiting time as the AI search through our knowledge base")
     st.write("Check out our [CHILD website here](https://child.chi.sg)")
-    st.markdown(f'<a href="{link1_url}" target="_blank"><img src="/NUHS Logo 1.PNG" width="150px" height="100"></a>', unsafe_allow_html=True)
+    st.markdown(f'<a href="{link1_url}" target="_blank"><img src="{image1_path}" width="150px" height="100"></a>', unsafe_allow_html=True)
     st.markdown(f'<a href="{link2_url}" target="_blank"><img src="{image2_path}" width="150px" height="100"></a>', unsafe_allow_html=True)
     st.markdown(f'<a href="{link3_url}" target="_blank"><img src="{image3_path}" width="150px" height="100"></a>', unsafe_allow_html=True)
 
