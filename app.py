@@ -108,8 +108,8 @@ with st.sidebar:
     st.caption("Do be aware that there will be longer waiting time as the AI search through our knowledge base")
     st.write("Check out our [CHILD website here](https://child.chi.sg)")
     st.markdown(f'<a href="{link1_url}" target="_blank"><img src="/NUHS Logo 1.PNG" width="150px" height="100"></a>', unsafe_allow_html=True)
-    st.markdown(f'<a href="{link2_url}" target="_blank"><img src="{image2_path}" width="304px" height="100"></a>', unsafe_allow_html=True)
-    st.markdown(f'<a href="{link3_url}" target="_blank"><img src="{image3_path}" width="304px" height="100"></a>', unsafe_allow_html=True)
+    st.markdown(f'<a href="{link2_url}" target="_blank"><img src="{image2_path}" width="150px" height="100"></a>', unsafe_allow_html=True)
+    st.markdown(f'<a href="{link3_url}" target="_blank"><img src="{image3_path}" width="150px" height="100"></a>', unsafe_allow_html=True)
 
 
 
