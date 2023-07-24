@@ -92,8 +92,8 @@ if __name__ == "__main__":
         st.write("Check out our [CHILD website here](https://child.chi.sg)")
 
     st.sidebar.markdown('[![Title](https://corp.nhg.com.sg/Style%20Library/Images/logo.jpg)](‘https://corp.nhg.com.sg/Pages/default.aspx’)')
-    st.sidebar.markdown('[![Title](https://corp.nhg.com.sg/Style%20Library/Images/logo.jpg)](‘https://corp.nhg.com.sg/Pages/default.aspx’)')
-    st.sidebar.markdown('[![Title](https://corp.nhg.com.sg/Style%20Library/Images/logo.jpg)](‘https://corp.nhg.com.sg/Pages/default.aspx’)')    
+    st.sidebar.markdown('[![Title](https://www.singhealth.com.sg/Style%20Library/Common/images/header/site-logo.png)](‘https://www.singhealth.com.sg’)')
+    st.sidebar.markdown('[![Title](https://www.nuhs.edu.sg/PublishingImages/SiteLogo/nuhslogo.png)](‘https://www.nuhs.edu.sg/Pages/Home.aspx’)')    
 
 
 
