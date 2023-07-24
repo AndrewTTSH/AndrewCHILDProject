@@ -63,6 +63,11 @@ def main():
                 unsafe_allow_html=True)
     st.image('./banner.jpg')
     st.text("Query on any topics related to healthcare and innovation")
+    
+imageban_url = "/child logo_with brushstroke.png"
+linkban_url = "https://www.singhealth.com.sg"
+
+    st.markdown(f'<a href="{linkban_url}" target="_blank"><img src="{imageban_url}" width="200" height="200"></a>', unsafe_allow_html=True)
     st.markdown("[![banner](https://github.com/AndrewTTSH/AndrewCHILDProject/blob/main/banner.jpg?raw=true)](https://child.chi.sg)")
 
 
@@ -86,13 +91,13 @@ if __name__ == "__main__":
         st.session_state['total_cost'] = 0.0
     # Sidebar - let user choose model, show total cost of current conversation, and let user clear the current conversation
 
-image1_url = "./child logo_with brushstroke.png"
+image1_url = "/child logo_with brushstroke.png"
 link1_url = "https://corp.nhg.com.sg/Pages/default.aspx"
 
-image2_url = "./child logo_with brushstroke.png"
+image2_url = "/child logo_with brushstroke.png"
 link2_url = "https://www.nuhs.edu.sg/Pages/Home.aspx"
 
-image3_url = "./child logo_with brushstroke.png"
+image3_url = "/child logo_with brushstroke.png"
 link3_url = "https://www.singhealth.com.sg"
 
     
