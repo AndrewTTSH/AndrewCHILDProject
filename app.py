@@ -84,7 +84,4 @@ if __name__ == "__main__":
     with st.sidebar:
         st.caption("Developed from open source codes for a search based on CHILD collection of projects.")
         st.caption("Do be aware that there will be longer waiting time as the AI search through our knowledge base")
-    <a target="_self" href="https://child.chi.sg">
-        st.button('check out our website [link](https://child.chi.sg)')
-        </a>
         st.write("check out our website [link](https://child.chi.sg)")
