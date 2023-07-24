@@ -60,7 +60,7 @@ def main():
     st.markdown("<h1 style='text-align: center;'>CHILD Projects </h1>",
                 unsafe_allow_html=True)
     st.markdown("<h1 style='text-align: center;'>Check out our [CHILD website here](https://child.chi.sg)</h1>", unsafe_allow_html=True)
-    link = '[GitHub](http://github.com)'
+    link = "<h1 style='text-align: center;'>[GitHub](http://github.com)'</h1>"
     st.markdown(link, unsafe_allow_html=True)
     st.image('./banner.jpg')
     st.text("Query on any topics related to healthcare and innovation")
