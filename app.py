@@ -57,7 +57,7 @@ def retrieval_answer(query):
     result = qa.run(query)
     return result
 def main():
-    st.markdown("<h1 style='text-align: center;'>CHILD Projects</h1>",
+    st.markdown("<h1 style='text-align: center;'>CHILD Projects [CHILD website here](https://child.chi.sg)" </h1>",
                 unsafe_allow_html=True)
     st.image('./banner.jpg')
     st.text("Query on any topics related to healthcare and innovation")
