@@ -59,6 +59,9 @@ def retrieval_answer(query):
 def main():
     st.markdown("<h1 style='text-align: center;'>CHILD Projects [CHILD website here](https://child.chi.sg)" </h1>",
                 unsafe_allow_html=True)
+    st.write("Check out our [CHILD website here](https://child.chi.sg)")
+    link = '[GitHub](http://github.com)'
+    st.markdown(link, unsafe_allow_html=True)
     st.image('./banner.jpg')
     st.text("Query on any topics related to healthcare and innovation")
 
