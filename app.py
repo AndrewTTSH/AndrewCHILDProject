@@ -84,10 +84,14 @@ if __name__ == "__main__":
     with st.sidebar:
         st.caption("Developed from open source codes for a search based on CHILD collection of projects.")
         st.caption("Do be aware that there will be longer waiting time as the AI search through our knowledge base")
-        def open_support_ticket():
-            email_link = "https://child.chi.sg"
-            webbrowser.open(email_link)
+    def open_page(url):
+        open_script= """
+            <script type="text/javascript">
+                window.open('%s', '_blank').focus();
+            </script>
+        """ % (url)
+        html(open_script)
 
-                st.button("Contact us!", on_click=open_support_ticket)
+    st.button('Open link', on_click=open_page, args=('https://streamlit.io',))
         st.button('check out our website [link](https://child.chi.sg)')
         st.write("check out our website [link](https://child.chi.sg)")
