@@ -86,4 +86,4 @@ if __name__ == "__main__":
         st.caption("Do be aware that there will be longer waiting time as the AI search through our knowledge base")
         st.write("Check out our CHILD website here [here](https://child.chi.sg)")
         link = '[GitHub](http://github.com)'
-st.markdown(link, unsafe_allow_html=True)
+        st.markdown(link, unsafe_allow_html=True)
