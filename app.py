@@ -91,6 +91,9 @@ if __name__ == "__main__":
         st.session_state['total_cost'] = 0.0
     # Sidebar - let user choose model, show total cost of current conversation, and let user clear the current conversation
 
+imagechild_path = "https://github.com/AndrewTTSH/AndrewCHILDProject/blob/main/child%20logo_with%20brushstroke.png?raw=true"
+linkchild_url = "https://child.chi.sg"
+
 image1_path = "https://raw.githubusercontent.com/AndrewTTSH/AndrewCHILDProject/2fe1c8622f3932f55c4b70ffe5f62276fa52516b/nhgroup.svg"
 link1_url = "https://corp.nhg.com.sg/Pages/default.aspx"
 
@@ -101,7 +104,7 @@ image3_path = "https://github.com/AndrewTTSH/AndrewCHILDProject/blob/main/AIC-Ma
 link3_url = "https://www.singhealth.com.sg"
 
 st.sidebar.image("./child logo_with brushstroke.png", use_column_width=True)
-
+st.markdown(f'<a href="{linkchild_url}" target="_blank"><img src="{imagechild_path}" width="150px" height="100"></a>', unsafe_allow_html=True)
 
 with st.sidebar:
     st.caption("Developed from open source codes for a search based on CHILD collection of projects.")
