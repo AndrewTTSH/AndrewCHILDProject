@@ -67,7 +67,7 @@ def main():
     imageban_url = "/child logo_with brushstroke.png"
     linkban_url = "https://www.singhealth.com.sg"
 
-    st.markdown(f'<a href="{linkban_url}" target="_blank"><img src="{imageban_url}" width="704" height="262"></a>', unsafe_allow_html=True)
+    st.markdown(f'<a href="{linkban_url}" target="_blank"><img src="{imageban_path}" width="150px" height="100"></a>', unsafe_allow_html=True)
     st.markdown("[![banner](https://github.com/AndrewTTSH/AndrewCHILDProject/blob/main/banner.jpg?raw=true)](https://child.chi.sg)")
 
 
