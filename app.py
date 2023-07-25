@@ -91,7 +91,7 @@ if __name__ == "__main__":
         st.session_state['total_cost'] = 0.0
     # Sidebar - let user choose model, show total cost of current conversation, and let user clear the current conversation
 
-image1_path = "https://github.com/AndrewTTSH/AndrewCHILDProject/blob/main/NHG_CMYK_vertical.png?raw=true"
+image1_path = "https://raw.githubusercontent.com/AndrewTTSH/AndrewCHILDProject/2fe1c8622f3932f55c4b70ffe5f62276fa52516b/nhgroup.svg"
 link1_url = "https://corp.nhg.com.sg/Pages/default.aspx"
 
 image2_path = "https://github.com/AndrewTTSH/AndrewCHILDProject/blob/main/NUHS%20Logo%201.PNG?raw=true"
