@@ -59,6 +59,7 @@ def retrieval_answer(query):
     result = qa.run(query)
     return result
 def main():
+    st.write("[Home](https://child.chi.sg) / Chat")
     st.markdown("<h1 style='text-align: center;'>CHILD Projects </h1>",
                 unsafe_allow_html=True)
     
@@ -101,6 +102,8 @@ link2_url = "https://www.nuhs.edu.sg/Pages/Home.aspx"
 image3_path = "https://github.com/AndrewTTSH/AndrewCHILDProject/blob/main/AIC-Main%20Logo%20RGB-HR.png?raw=true"
 link3_url = "https://www.singhealth.com.sg"
 
+image4_path = "https://github.com/AndrewTTSH/AndrewCHILDProject/blob/main/banner.jpg?raw=true"
+link4_url = "https://www.singhealth.com.sg"
 
 
 with st.sidebar:
@@ -111,6 +114,9 @@ with st.sidebar:
     st.markdown(f'<a href="{link1_url}" target="_blank"><img src="{image1_path}" width="150px" height="100"></a>', unsafe_allow_html=True)
     st.markdown(f'<a href="{link2_url}" target="_blank"><img src="{image2_path}" width="150px" height="100"></a>', unsafe_allow_html=True)
     st.markdown(f'<a href="{link3_url}" target="_blank"><img src="{image3_path}" width="150px" height="100"></a>', unsafe_allow_html=True)
+    st.markdown(f'<a href="{link4_url}" target="_blank"><img src="{image4_path}" width="150px" height="100"></a>', unsafe_allow_html=True)
+
+    
 
 
 
