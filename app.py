@@ -64,7 +64,7 @@ def main():
     st.image('./banner.jpg')
     st.text("Query on any topics related to healthcare and innovation")
     
-    imageban_url = "https://github.com/AndrewTTSH/AndrewCHILDProject/blob/main/child%20logo_with%20brushstroke.png?raw=true"
+    imageban_url = "https://github.com/AndrewTTSH/AndrewCHILDProject/blob/main/banner.jpg?raw=true"
     linkban_url = "https://child.chi.sg"
 
     st.markdown(f'<a href="{linkban_url}" target="_blank"><img src="{imageban_url}" width="704px" height="262px"></a>', unsafe_allow_html=True)
