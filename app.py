@@ -100,7 +100,7 @@ link2_url = "https://www.nuhs.edu.sg/Pages/Home.aspx"
 image3_path = "https://github.com/AndrewTTSH/AndrewCHILDProject/blob/main/AIC-Main%20Logo%20RGB-HR.png?raw=true"
 link3_url = "https://www.singhealth.com.sg"
 
-st.sidebar.image(image1_path, use_column_width=True)
+st.sidebar.image("/child logo_with brushstroke.png", use_column_width=True)
 
 
 with st.sidebar:
