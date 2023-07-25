@@ -103,7 +103,7 @@ link2_url = "https://www.nuhs.edu.sg/Pages/Home.aspx"
 image3_path = "https://github.com/AndrewTTSH/AndrewCHILDProject/blob/main/AIC-Main%20Logo%20RGB-HR.png?raw=true"
 link3_url = "https://www.singhealth.com.sg"
 
-st.sidebar.image("./child logo_with brushstroke.png", use_column_width=True)
+
 
 with st.sidebar:
     st.markdown(f'<a href="{linkchild_url}" target="_blank"><img src="{imagechild_path}" width="304px" height="100"></a>', unsafe_allow_html=True)
